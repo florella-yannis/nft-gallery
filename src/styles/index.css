@@ -60,7 +60,7 @@ input[type="submit"]:hover {
 .cards-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin-top: 16px;
+  margin: 16px 0px;
 }
 .pic-card {
   border-radius: 14px;
