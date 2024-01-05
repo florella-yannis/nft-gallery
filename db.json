@@ -50,10 +50,16 @@
       "id": 9
     },
     {
-      "artist": "Yannis test",
-      "year": "2025",
-      "photo": "https://picsum.photos/400/469",
+      "artist": "try",
+      "year": "2012",
+      "photo": "https://picsum.photos/400/306",
       "id": 10
+    },
+    {
+      "artist": "test",
+      "year": "2000",
+      "photo": "https://picsum.photos/400/355",
+      "id": 11
     }
   ]
 }
