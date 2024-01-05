@@ -12,8 +12,20 @@ export const picturesSlice = createSlice({
         addPicture: (state, { payload }) => {
             state.pictures.push(payload);
         },
+        editPicture: (state, { payload }) => {
+            state.pictures = state.pictures.map((pic) => {
+                if (pic.id === payload[1]) {
+                    return {
+                        ...pic,
+                        artist: payload[0],
+                    };
+                } else {
+                    return pic;
+                }
+            });
+        },
     },
 });
 
-export const {setPicturesData, addPicture} = picturesSlice.actions;
+export const {setPicturesData, addPicture, editPicture} = picturesSlice.actions;
 export default picturesSlice.reducer;
